@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  
+<!--stylesheet-->
+<link rel="stylesheet" href="css/indexstyle.css"> <!--external Style sheet "indexstyle.css"-->
+
+
+<script src="js/passwords.JS" defer></script> <!--JSON/ Local Storage-->
+
+
+
+
+
+<title>Password Manager</title>
+</head>
+<body>
+  
+  <header class="main-header">
+    <nav class="nav main-nav"> 
+
+        <h1 class="bannertitle"> Comp 1004 password project </h1>
+        <h2 class="time"> <span id='date-time'></span>.</h2>
+        <script>
+          var dt = new Date();
+                      document.getElementById('date-time').innerHTML=dt;
+       </script>
+      </menu>
+      </nav>
+  </header>
+<div>
+<h1>Password Manager project</h1>
+
+<p>Welcome to my COMP 1004 Password Manager Application, this web-app is a work in progress Application.</p>
+<p1>Instructions for use: <br> 
+  In order to use this password manager, please press the show passwords button below.
+  <br>
+  Once the password page is open, simply input the credentials and they will be saved into the table!
+  <br>
+  
+  <button class="roundbutton" onclick="display('pwdwrap');">Show passwords</button>
+  
+
+<br>
+</p1>
+
+<br> <!--line break-->
+<div class="ModalWrapper"> 
+  <div id="pwdwrap">
+    <!--Form For Credentials Input-->
+      <form class="forms">
+        <form>
+          <div> 
+          <label for="Website Name">URL   &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; </label> <!--&zwnj; is used to display an 'empty' character in order to make a space -->
+          <input type="text" name="Website Name" id="WebsiteName"placeholder = "Site URL">  <!--URL Input-->
+        </div>
+        <div>
+          <label for= "Username"> Username</label>
+          <input type= "text" name="Username" id="Username" placeholder="Username"> <!--username-->
+        </div>
+        <div class="pwdbox">
+          <label for="Password"> Password   &zwnj; </label>
+          <input type = "password" name="password" id="Pass" placeholder="Password" onkeyup ="pwdStrength()"> <!--password-->
+
+          <input type="checkbox" onclick=showpass()>Show Password
+          
+          <script> //script for show password checkbox
+            function showpass(){
+              var x = document.getElementById("Pass");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+              x.type = "password";
+              }
+            }
+            </script>
+            
+        <div>
+
+          <!--button-->
+          <button type="reset"> Restart form</button> <!--reset form-->
+          <button type="button" id="btnsubmit">Save Details</button> <!--Save buttton-->
+        </div>
+      </form>
+      <div class="strengthpwd">
+        <h2>Password Strength</h2>
+        <p id="Length" class="Nosecure">10 Characters</p>
+        
+        <p id="capital" class="Nosecure">Has a capital</p>
+        
+        <p id="symbol" class="Nosecure">Has a symbol</p>
+        
+        <p id="number" class="Nosecure">Has a number</p>
+        
+    </div>
+      <!--add a PASSWORD METER-->
+      <fieldset>
+        <legend>Current Passwords</legend>
+        <ul class="Details"></ul>
+
+      </fieldset>
+
+
+        <script src="js/passwords.JS"></script> <!--JSON/ Local Storage-->
+
+ </div>
+</div>
+</body>
+</html>
+
+<!--
+NOTES:
+//
+"&zwnj;" is used as an empty character, allowing me to give a 'space' 
+//
+
+//
+
+//
+
+///
+-->

@@ -1,0 +1,115 @@
+/*Fonts*/
+ /*"Ubuntu"*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+
+*{
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+html, body{
+    background-color: rgb(177, 177, 177);
+    background-image: url("");
+    margin: 0;
+    padding: 0; 
+}
+h1{
+    text-align: center;
+}
+
+p{
+  font-size: larger;
+  font-weight: bold;
+}
+menu{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: linear-gradient(to right, rgb(96, 95, 95) , rgb(147, 147, 147));
+}
+ul{
+  display:block;
+  float:left;
+  width:150px; /* adjust */
+  height:150px; /* adjust */
+  padding: 1px; /*adjust*/
+
+}
+li {
+  text-align: left;
+  list-style-position: inside;
+	text-align: left; 
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+header{
+  background-image: linear-gradient(to right, rgb(171, 170, 170) , rgb(60, 60, 59));
+}
+.nav main-nav {
+  float: right;
+}
+
+
+.bannertitle{
+  border-left: #000000 5px solid;
+
+  color: white;
+  text-align: left;
+
+}
+.time{
+  font-size: small;
+  
+}
+
+
+.pwdbox {
+  float: center;
+}
+.ModalWrapper{
+  width: 100%;
+  height: 200%;
+  background-color: #807f7f;
+  display: none;
+  justify-content: center;
+  align-items:center;
+  position:relative;
+}
+.roundbutton {
+  
+  border:rgb(96, 95, 95);
+  background-image: linear-gradient( rgb(94, 92, 92), rgb(60, 60, 59));
+  padding: 20px;
+  font-weight: bold;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 124px;
+  text-align: center;
+  position:relative;
+  left: 25%;
+  margin-top:10%;
+}
+.Secure{
+ color: aqua;
+}
+.Nosecure{
+  color: red;
+}
+
+.strengthpwd{
+float: right;
+font-size: small;
+}
