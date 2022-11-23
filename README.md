@@ -1,4 +1,3 @@
-# Comp_1004_yearlong
 # Comp 1004 password manager project
 
 ## Introduction
